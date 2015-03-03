@@ -1,0 +1,121 @@
+.body{
+    background: url("../img/fundo.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+}
+.logocentro{
+    left: 50%;
+    margin-left: -75px;
+    position: absolute;
+}
+.container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.btn-alterar{
+    background: none repeat scroll 0 0 #2ecc71;
+    border: 0 none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    float: right;
+}
+.sociais{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.sociais-avatar {
+    margin:5px;
+    float: none !important;
+    background: #ffffff;
+}
+.timeline-social{
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.175);
+    margin: 0 180px;
+    background: #f1f1f1;
+}
+.tab_destaque{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+.fade.in{
+    background: #ffffff;
+    border-bottom: 1px solid #e7edf2;
+    border-left: 1px solid #e7edf2;
+    border-right: 1px solid #e7edf2;
+}
+.atendimento{
+    float: left;
+    width: 330px;
+}
+.agregados{
+    float: left;
+    width: 330px;
+}
+.contatos{
+    float: left;
+    width: 330px;
+}
+.tabela{
+    padding: 15px !important;
+}
+.menu{
+    float: left;
+    width: 100%;
+}
+.perfil{
+    padding: 15px 22.5px;
+
+}
+
+@media screen and (min-width:320px) {
+    .contador{
+        color: #fff;
+        font-size: 15px;
+        padding: 4px 24px;
+        position: absolute;
+    }
+}
+@media screen and (min-width:480px) {
+    .contador{
+        color: #000;
+        position: relative;
+        float: left;
+        font-size: 15px;
+        margin-left: -300px;
+        padding: 34px 20px;
+    }
+}
+@media screen and (min-width:600px) {
+    .contador{
+        color: #000;
+        position: relative;
+        float: left;
+        font-size: 15px;
+        margin-left: -300px;
+        padding: 34px 20px;
+    }
+}
+@media screen and (min-width:768px) {
+    .contador{
+        color: #000;
+        position: relative;
+        float: left;
+        font-size: 15px;
+        margin-left: -300px;
+        padding: 34px 20px;
+    }
+}
+@media screen and (min-width:992px) {
+    .contador{
+        color: #000;
+        position: relative;
+        float: left;
+        font-size: 15px;
+        margin-left: -300px;
+        padding: 34px 20px;
+    }
+}
