@@ -1,0 +1,52 @@
+/* line 1, ../../app/styles/scss/pages/_signin.scss */
+
+.signin-wrapper {
+  position: relative;
+  margin: 60px auto 5px;
+  padding: 20px;
+  width: 420px;
+  background-color: #fff;
+}
+.login{
+    background: none repeat scroll 0 0 #fbf8f1;
+    height: 478px;
+    margin: 0 auto;
+    width: 370px;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.login_img{
+    background-image: url("../img/login.png");
+    height: 212px;
+    width: 370px;
+    border-radius: 4px 4px 0 0;
+}
+/* line 8, ../../app/styles/scss/pages/_signin.scss */
+
+.signin-wrapper .signin-brand {
+  margin: 20px 0 40px;
+  text-align: center;
+  font-size: 34px;
+}
+
+/* line 14, ../../app/styles/scss/pages/_signin.scss */
+
+.signin-alt {
+  margin-bottom: 20px;
+}
+
+/* line 18, ../../app/styles/scss/pages/_signin.scss */
+
+.signin-cr {
+  margin: 0 0 20px;
+  text-align: center;
+  color: #ecf0f1;
+}
+
+@media (max-width: 768px) {
+  /* line 25, ../../app/styles/scss/pages/_signin.scss */
+
+  .signin-wrapper {
+    width: 90%;
+  }
+}

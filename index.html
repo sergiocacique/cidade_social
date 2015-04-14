@@ -1,54 +1,54 @@
-<!DOCTYPE html>
-<html>
+<html ng-app="CidadeSocial">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Cidade Social</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <!-- PRINCIPAL -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/cidade.css">
-    <link rel="stylesheet" href="css/cidade-social.css">
-    <link rel="stylesheet" href="css/wrapkit-skins-all.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <!-- FIM PRINCIPAL -->
+    <title>Cidade Social</title>
+    <base href="/cidade_social/"/>
 
-
+    <link rel="stylesheet" href="public/css/modules/bootstrap.css">
+    <link rel="stylesheet" href="public/css/modules/wrapkit/wrapkit-skins-all.css">
+    <link rel="stylesheet" href="public/css/modules/font-awesome.min.css">
+    <link rel="stylesheet" href="public/css/modules/select2.min.css">
+    <link rel="stylesheet" href="public/css/modules/wizard.min.css">
+    <link rel="stylesheet" href="public/css/cidade-social.css">
+    <link rel="stylesheet" href="public/css/cidade.css">
+    <link rel="stylesheet" href="public/css/menu.css">
 </head>
 <body class="body">
     <main id="wrapper" class="wrapkit-wrapper container">
-    <header class="header">
-        <div class="navbar navbar-whity">
-            <div class="container-fluid">
-                <div class="navbar-header navbar-block">
-                    <div id="dl-menu" class="dl-menuwrapper">
-                        <button class="dl-trigger">Open Menu</button>
-                        <ul class="dl-menu">
-                            <li><a href="#">Aniversariantes</a></li>
-                            <li>
-                                <a href="#">Administrativo</a>
-                                <ul class="dl-submenu">
-                                    <li><a href="#">Usuários</a></li>
-                                    <li><a href="#">Configurações</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Duplicidades</a></li>
-                            <li><a href="#">Atendimentos</a></li>
-                            <li><a href="#">Relatório Geral</a></li>
-                            <li><a href="#">Imprimir Etiquetas</a></li>
-                        </ul>
-                    </div><!-- /dl-menuwrapper -->
-                    <div id="sessao" class="contador"></div>
-                    <a class="navbar-brand logocentro" href="#"><img src="img/logo.png"></a>
-                </div><!--/.navbar-header-->
-            </div><!--/.container-fluid-->
-        </div><!--/.navbar-->
-    </header><!--/.header-->
+        <header class="header">
+            <nav class="navbar navbar-whity">
+                <div class="container-fluid">
+                    <div class="navbar-header navbar-block">
+                        <div id="dl-menu" class="dl-menuwrapper">
+                            <button class="dl-trigger">Open Menu</button>
+                            <ul class="dl-menu">
+                                <li><a href="#">Aniversariantes</a></li>
+                                <li>
+                                    <a href="#">Administrativo</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="#">Usuários</a></li>
+                                        <li><a href="#">Configurações</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Duplicidades</a></li>
+                                <li><a href="#">Atendimentos</a></li>
+                                <li><a href="#">Relatório Geral</a></li>
+                                <li><a href="#">Imprimir Etiquetas</a></li>
+                            </ul>
+                        </div><!-- /dl-menuwrapper -->
+                        <div id="sessao" class="contador"></div>
+                        <a class="navbar-brand logocentro" href="#"><img src="public/img/logo.png"></a>
+                    </div><!--/.navbar-header-->
+                </div><!--/.container-fluid-->
+            </nav><!--/.navbar-->
+        </header><!--/.header-->
 
-
-    <section class="content-wrapper"></section>
+        <section ng-view class="content-wrapper">
+        </section>
 
         <footer class="footer-wrapper">
             <div class="footer">
@@ -57,22 +57,30 @@
             </div>
         </footer><!--/.footer-->
     </main>
-    <!-- VENDOR -->
-    <script src="lib/jquery.js"></script>
-    <script src="lib/bootstrap.js"></script>
-    <script src="lib/jquery-ui.js"></script>
-    <script src="lib/modernizr.custom.js"></script>
-    <script src="js/tempo.js"></script>
-    <!-- END VENDOR -->
 
-    <!-- PRINCIPAL -->
+    <script src="public/js/modules/angular/angular.min.js"></script>
+    <script src="public/js/modules/angular/angular-resource.min.js"></script>
+    <script src="public/js/modules/angular/angular-route.min.js"></script>
 
-    <script src="lib/jquery.dlmenu.js"></script>
+    <script src="public/js/modules/jquery/jquery.js"></script>
+    <script src="public/js/modules/bootstrap.js"></script>
+    <script src="public/js/modules/jquery/jquery-ui.js"></script>
+    <script src="public/js/modules/modernizr.custom.js"></script>
+    <script src="public/js/modules/jquery/jquery.bootstrap.wizard.min.js"></script>
+    <script src="public/js/modules/select2.min.js"></script>
+    <script src="public/js/modules/form-wizard-demo.js"></script>
+    <script src="public/js/modules/jquery/jquery.dlmenu.js"></script>
+
+    <script src="src/routes.js"></script>
+    <script src="src/services.js"></script>
+    <script src="src/controllers.js"></script>
+
+    <script src="public/js/tempo.js"></script>
+
     <script>
-        $(function() {
-            $( '#dl-menu' ).dlmenu();
-        });
+    $(function() {
+        $('#dl-menu').dlmenu();
+    });
     </script>
-    <!-- FIM PRINCIPAL -->
 </body>
 </html>
